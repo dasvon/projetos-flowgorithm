@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Daniel"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-04-12 06:09:08 "/>
+        <attribute name="created" value="RGFuaWVsO0RBTklFTC1QQzsyMDIxLTA0LTExOyIwNjozOTozOCAiOzI0MDU="/>
+        <attribute name="edited" value="RGFuaWVsO0RBTklFTC1QQzsyMDIxLTA0LTEyOyIwNjowOTowOCAiOzg7MjUxNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome, sobrenome" type="String" array="False" size=""/>
+            <declare name="idade" type="Integer" array="False" size=""/>
+            <output expression="&quot;Qual &#233; o seu nome?&quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="&quot;Qual &#233; o seu sobrenome?&quot;" newline="True"/>
+            <input variable="sobrenome"/>
+            <output expression="&quot;Qual a sua idade?&quot;" newline="True"/>
+            <input variable="idade"/>
+            <declare name="nota1, nota2, nota3, nota4, media" type="Real" array="False" size=""/>
+            <input variable="nota1"/>
+            <input variable="nota2"/>
+            <input variable="nota3"/>
+            <input variable="nota4"/>
+            <assign variable="media" expression="(nota1+nota2+nota3+nota4)/4"/>
+            <output expression="&quot;O seu nome &#233;: &quot; &amp; nome &amp; &quot; O seu sobrenome &#233;: &quot; &amp; sobrenome &amp; &quot; A sua idade &#233;: &quot; &amp; idade &amp; &quot; A sua m&#233;dia &#233;: &quot; &amp; media" newline="True"/>
+            <if expression="media&gt;=7">
+                <then>
+                    <output expression="&quot;voc&#234; passou&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;voc&#234; n&#227;o passou&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
